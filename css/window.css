@@ -1,0 +1,109 @@
+.window {
+  width: 300px;
+  display: none;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  color: #444;
+  border: 1px solid #838383;
+  background-color: #E3E9EB;
+  box-shadow: 0 0 10px #616161;
+  border-radius: 9px;
+}
+
+.window-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #AAA4A4;
+  height: 25px;
+  margin-bottom: 0;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: linear-gradient(to bottom, #fff, #ddd);
+}
+
+.window-title .left {
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.window-title .icon {
+  margin-right: 4px;
+  display: table-cell;
+  width: 30px;
+  height: 16px;
+  border-radius: 12px;
+  background-color: #cea35d;
+}
+
+.icon.close:hover {
+  background-color: #cea02d;
+}
+
+.window-container {
+  position: relative;
+  margin-top: 0;
+  border: 1px solid #AAA4A4;
+  background-color: #F8F4F4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 12px;
+}
+
+
+.window-container .container {
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.custom-floor {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.custom-floor button {
+  display: inline-block;
+}
+
+button:active {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .3), 0 -1px 0 rgba(255, 255, 255, .3) inset;
+}
+
+.custom-floor button:last-child {
+  margin-left: 0.5em;
+  font-weight: bold;
+  color: rgb(243, 150, 10);
+}
+
+.button {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 0;
+  cursor: default;
+  border: 1px solid #bbb;
+  overflow: visible;
+  font: bold 13px arial, helvetica, sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #555;
+  outline: none;
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0));
+  transition: background-color .2s ease-out;
+  background-clip: padding-box;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+  user-select: none;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  background-image: initial;
+}
